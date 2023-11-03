@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&disp");
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@600&family=Roboto:wght@500&display=swap');
+/*
+https://fonts.googleapis.com/css?family-Montserrat:500
+*/
+/*
+* indicates to override everything 
+*box sizing to be border box, margin padding, and background color
+*/
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+
+}
+/*
+styles for the font
+list, a tag(hyperlink) and the buttons
+applicable to all those, font weight, and size
+color offwhite 
+*/
+li,a, button{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size:25px;
+    color: #000000;
+    text-decoration:none
+}
+.ParagraphText{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-weight:500;
+    font-size:20px;
+    text-decoration:none
+}
+/*
+header display flex
+The display: flex property sets your 
+container to be a flexbox element. 
+The flex-wrap property tells the container to wrap its child elements onto the next line if there's not enough space for them on the first line.
+justify content 
+
+CSS justify-content property (evenly space between those two)
+defines how the browser distributes space
+ between and around content items 
+ along the main-axis of a flex container,
+ and the inline axis of a grid container
+
+The CSS padding properties are used to generate space around an element's 
+content, inside of any defined borders. 
+
+The CSS align-items property sets the align-self value 
+on all direct children as a group. (center it on one another in header)
+
+*/
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:30px, 10%;
+}
+/*
+.logo, hover going to turn to cursor 
+.nav__links: set list style to none
+.nav__links, each item, display in-line block, side by side
+padding
+a tags within items: transition of all 0.3 seconds ease 0s 
+hover: when have mouse over it change it to a blue color
+button styles, hover background color
+
+*/
+.logo{
+    cursor:pointer;
+}
+.nav__links{
+    list-style: style none;
+}
+.nav__links li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li a {
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover {
+    color: #0088a9
+}
+button{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
