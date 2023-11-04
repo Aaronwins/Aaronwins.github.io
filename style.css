@@ -32,6 +32,13 @@ li,a, button{
     font-size:20px;
     text-decoration:none
 }
+.BebasText{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-size:25px;
+    color: #000000;
+    text-decoration:none
+}
 /*
 header display flex
 The display: flex property sets your 
