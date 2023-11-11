@@ -1,29 +1,81 @@
+<!DOCTYPE html>
 <html>
-<head>
+    <!-- Continue with your existing webpage content -->
+    <head>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Contact.css">
-    </head>
 
-<div class="container">
-    <form action="action_page.php">
-  
-      <label for="fname">First Name</label>
-      <input type="text" id="fname" name="firstname" placeholder="Your name..">
-  
-      <label for="lname">Last Name</label>
-      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-  
-      <label for="country">Country</label>
-      <select id="country" name="country">
-        <option value="australia">Australia</option>
-        <option value="canada">Canada</option>
-        <option value="usa">USA</option>
-      </select>
-  
-      <label for="subject">Subject</label>
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-  
-      <input type="submit" value="Submit">
-  
-    </form>
-  </div>
-  </html>
+<div class = "hero">
+    </head>
+    <div class = "FormsText">
+    <FONT COLOR="#0FFF50"><b>
+    <center>CONTACT FORM: Instructions fill out what you want to tell me, NOTE: not everything is required, but enter email address so I can get back! Thanks! </center> 
+    <!-- This is a form when the user presents the submit button send them to your email
+    form method post send it to a database,  -->
+    <form action="https://formsubmit.co/aarondaboss2124@gmail.com" method="POST" />
+    <input type="hidden" name="_next" value="https://webpage.pace.edu/AA79453P/PersonalWebsite/ThankYou.html">
+    <br/>
+<!-- Input Name -->
+<!--If name longer than 25 characters gets truncated
+one is the label and the information outside of the box usually the same thing-->
+
+
+Enter your first and last name: <input name="name" type ="text" size="25">
+<br/> <!-- br tag, slash to put it on the next line-->
+Email Address:<input name="EmailAddress" type ="text" size="25">
+
+Address:<input name="Address" type ="text" size="25">
+
+<br/> <!-- br tag, slash to put it on the next line-->
+
+City:<input name="City" type ="text" size="15" maxlength="50">
+State:<input name="State" type ="text" size="2" maxlength="2">
+<!--Zip:<input name="Zip" type ="text" size="10" maxlength="10"> -->
+
+<br/>
+
+Which of these would you rather have? Select one!
+<input name="purchase" type="checkbox" value="sunglasses">Sunglasses
+<input name="purchase" type="checkbox" value="pens">Pens
+<input name="purchase" type="checkbox" value="hats">Hats
+<br/>
+
+
+<!-- drop down using select command, with given options-->
+<b>Where are you originally from?</b>
+<select name="origin">
+<option>Americas</option>
+<option>Europe</option>
+<option>Asia</option>
+<option>Africa</option>
+<option>Elsewhere?</option>
+</select>
+<br/> <br/>
+<b>If you answered elsewhere and would like to share where are you originally from, please do!:</b>
+<input name="elsewhere" type ="text" size="25">
+<!-- radio buttons yes and no values 
+each of the elements have a name to reference it!-->
+
+<br/> <br/>
+
+<b>Do you like the website? Yes? No? Kinda?</b>
+<input name="like" type="radio" id = "Yes" value="yes">Yes
+<input name="like" type="radio" id ="No" value="no">No
+<input name="like" type="radio" id = "Kind of"value="kinda">Kind of
+<br /> <br/>
+
+<!-- Share with your comments TextArea-->
+Share with us your comments so I could understand what you reached out about further! : <br>
+<textarea name="comments" rows="3" cols="150"></textarea>
+<br /> <br/>
+
+<!-- Submit and research button, value reset and submit-->
+<input type="submit" value="SUBMIT">
+<input type ="reset" value="reset"
+<script src="script.js"></script>
+</form>
+</div>
+</div>
+</b>
+</FONT>
+</html>
