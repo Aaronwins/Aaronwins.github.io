@@ -132,3 +132,32 @@ input[type=radio],input[type=checkbox]{
     height: 105vh;
 
 }
+/*
+float property helps to keep images next to each other
+*/
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .footer{
+    font-family: 'Roboto', sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    /*background-color: #000000;*/
+    text-align: center;
+    z-index: 1;
+    font-size: 15;
+  }
